@@ -1,0 +1,414 @@
+% =====================================================================
+%  Vocabulary: Spektrum-Podcast – "Altermagnete: Eine neue Form des
+%  Magnetismus" (6 Nov 2026), intro section
+%  German -> English -> Farsi, with memory codes (keyword method)
+%  Compile with:  xelatex altermagnete_vocab.tex   (run twice)
+% =====================================================================
+\documentclass[10pt]{article}
+\usepackage[a4paper,landscape,margin=1.4cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\newfontfamily\farsifont[Script=Arabic,Scale=1.0]{DejaVu Sans}
+\TeXXeTstate=1
+\usepackage{array,longtable,xcolor,colortbl}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+
+% ---------- colour code for grammatical gender ----------
+\definecolor{derc}{HTML}{1F5FBF}   % masculine  = blue
+\definecolor{diec}{HTML}{C0262D}   % feminine   = red
+\definecolor{dasc}{HTML}{1E8A3E}   % neuter     = green
+\definecolor{verbc}{HTML}{7A3FB0}  % verbs      = purple
+\definecolor{codec}{HTML}{8A5A00}  % memory code
+\definecolor{headc}{HTML}{2B2B2B}
+\definecolor{rowc}{HTML}{F4F6FA}
+\definecolor{secc}{HTML}{E3E8F2}
+
+\newcommand{\der}[1]{\textcolor{derc}{\textbf{der #1}}}
+\newcommand{\die}[1]{\textcolor{diec}{\textbf{die #1}}}
+\newcommand{\das}[1]{\textcolor{dasc}{\textbf{das #1}}}
+\newcommand{\vb}[1]{\textcolor{verbc}{\textbf{#1}}}
+\newcommand{\w}[1]{\textbf{#1}}
+\newcommand{\pl}[1]{\newline{\footnotesize\color{gray} Pl. #1}}
+\newcommand{\fm}[1]{\newline{\footnotesize\color{gray} #1}}
+\newcommand{\fa}[1]{{\farsifont\beginR #1\endR}}
+\newcommand{\en}[1]{\beginL #1\endL}
+\newcommand{\key}[1]{\textcolor{codec}{\textbf{#1}}}
+
+\newcolumntype{F}[1]{>{\raggedleft\arraybackslash\farsifont\beginR}p{#1}<{\endR}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\newcommand{\vocabhead}{%
+  \rowcolor{headc}
+  \textcolor{white}{\textbf{\#}} &
+  \textcolor{white}{\textbf{Deutsch}} &
+  \textcolor{white}{\textbf{English}} &
+  \multicolumn{1}{>{\raggedleft\arraybackslash}p{4.3cm}|}{\textcolor{white}{\fa{\textbf{فارسی}}}} &
+  \textcolor{white}{\textbf{Memory code (Merk-Code)}} \\}
+\newcommand{\sect}[1]{\rowcolor{secc}\multicolumn{5}{|l|}{\textbf{#1}}\\\hline}
+
+\newcounter{wn}
+\newcommand{\n}{\stepcounter{wn}\thewn}
+
+\pagestyle{fancy}\fancyhf{}
+\lhead{\small Spektrum-Podcast · Altermagnete · Vocabulary}
+\rhead{\small Deutsch – English – \fa{فارسی}}
+\cfoot{\small \thepage}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Altermagnete – Vocabulary with Memory Codes}\\[4pt]
+{\large Spektrum-Podcast: \emph{Altermagnete: Eine neue Form des Magnetismus} (6.~Nov.~2026), intro}\\[2pt]
+{\normalsize Deutsch · English · \fa{فارسی}}
+\end{center}
+
+\noindent\textbf{How to use the codes.} Each word has a \key{code}: a sound-alike word
+(English or \fa{فارسی}) or a split of the German word into parts you already know. Say the
+German word, \emph{see} the code picture in your head, then the meaning.
+\textbf{Colour code for gender:}
+\textcolor{derc}{\textbf{der = blue}} ·
+\textcolor{diec}{\textbf{die = red}} ·
+\textcolor{dasc}{\textbf{das = green}} ·
+\textcolor{verbc}{\textbf{verbs = purple}}.
+Picture blue things as “men”, red as “women”, green as “neutral objects” — the colour
+becomes the code for the article. Words marked \textsf{★} have a deep-dive with examples in Part~2.
+
+\vspace{6pt}
+\section*{Part 1 · Word table}
+
+\begin{longtable}{|r|L{4.3cm}|L{4.2cm}|F{4.3cm}|L{9.6cm}|}
+\hline\vocabhead\hline
+\endfirsthead
+\hline\vocabhead\hline
+\endhead
+\hline\endfoot
+
+\sect{Nouns (Nomen)}
+\n & \die{Entstehung}\pl{die Entstehungen} & origin, formation, how something comes into being & پیدایش، شکل‌گیری، به‌وجود آمدن &
+\key{ent- (out of) + stehen (to stand)}: something \emph{stands up out of} nothing. Picture a magnet slowly standing up out of the ground. \\\hline
+\n & \der{Magnet}\pl{die Magnete / Magneten} & magnet & آهن‌ربا، مگنت &
+\key{= English “magnet”}. Blue (der) and with two poles — think of a blue horseshoe magnet. \\\hline
+\n & \der{Magnetismus} & magnetism & مغناطیس، خاصیت مغناطیسی &
+\key{-ismus = -ism}: Realismus, Tourismus, Magnetismus — all \textbf{der}. \\\hline
+\n & \die{Antwort}\pl{die Antworten} & answer & پاسخ، جواب &
+\key{ANT + WORT (word)}: an ant (\fa{مورچه}) carries a \emph{word} back to you = the answer. \\\hline
+\n & \die{Form}\pl{die Formen} & form, shape, type & شکل، فرم، نوع &
+\key{= \fa{فرم}} — same word in Farsi. “eine neue Form von Magnetismus” = a new kind of magnetism. \\\hline
+\n & \die{Physik} & physics & فیزیک &
+\key{= \fa{فیزیک}}. Pronounced “fü-ZIK” (stress at the end). \\\hline
+\n & \der{Tag}\pl{die Tage} & day & روز &
+\key{a “tag” on every calendar day}. \textsf{★} \emph{eines Tages} = one day (in the future). \\\hline
+\n & \der{Computer}\pl{die Computer} & computer & کامپیوتر، رایانه & \key{same word}. Plural has no ending. \\\hline
+\n & \der{Podcast}\pl{die Podcasts} & podcast & پادکست & \key{same word}. \\\hline
+\n & \der{Name}\pl{die Namen} & name & نام، اسم & \key{Name ≈ \fa{نام}} (same Indo-European root!). “Mein Name ist …” \\\hline
+\n & \die{Wissenschaft}\pl{die Wissenschaften} & science & علم، دانش &
+\key{wissen (to know) + -schaft (“-ship”)} = “know-ship” = science. Words in -schaft are always \textbf{die}. \\\hline
+\n & \das{Spektrum}\pl{die Spektren} & spectrum, range & طیف، گستره & \key{= “spectrum”}; think of the rainbow \fa{طیف}. \\\hline
+\n & \der{Kühlschrank}\pl{die Kühlschränke} & fridge & یخچال &
+\key{kühl (cool) + Schrank (cupboard)}. Farsi hook: you carry a cool (\fa{کول}) cupboard on your \fa{کول} (back). \\\hline
+\n & \der{Kühlschrankmagnet} & fridge magnet & آهن‌ربای یخچال، مگنت یخچالی &
+\key{compound rule}: the \emph{last} word decides the gender → \der{Magnet}. \\\hline
+\n & \das{Prinzip}\pl{die Prinzipien} & principle & اصل، پرنسیپ &
+\key{= \fa{پرنسیپ}} (Farsi borrowed it from French). “im Prinzip” = basically, in principle. \\\hline
+\n & \der{Physikunterricht} & physics class/lessons & درس فیزیک، کلاس فیزیک &
+\key{unter (under) + richten (to direct)}: the teacher directs the pupils “under” him → lessons. \\\hline
+\n & \der{Pol}\pl{die Pole} & pole & قطب &
+\key{Pol ≈ \fa{پل}} (bridge): a \fa{پل} stretched between the two poles of a magnet. Nordpol, Südpol. \\\hline
+\n & \das{Magnetfeld}\pl{die Magnetfelder} & magnetic field & میدان مغناطیسی & \key{Feld = field} (same sound). \\\hline
+\n & \das{Ding}\pl{die Dinge} & thing & چیز &
+\key{“ding!”} — every thing makes a “ding” when you tap it. \textsf{★} “Das ist nicht mein Ding.” \\\hline
+\n & \das{Bild}\pl{die Bilder} & picture, image; (here) idea, view & تصویر، عکس؛ (اینجا) برداشت، تصور &
+\key{you “build” a picture in your head}. \textsf{★} \emph{sich ein Bild machen} = to form an idea. \\\hline
+\n & \das{Jahr}\pl{die Jahre} & year & سال & \key{Jahr ≈ “year”} (German J = English Y). \\\hline
+\n & \die{Forschenden} (Pl.)\fm{sg. der/die Forschende} & researchers & پژوهشگران، محققان &
+\key{forschen = to research}. Farsi hook: researchers lift the \fa{فرش} (carpet) to search under it. Gender-neutral form of \emph{die Forscher}. \\\hline
+\n & \die{Klasse}\pl{die Klassen} & class, category; school class & دسته، رده؛ کلاس & \key{= \fa{کلاس}}. “eine neue Klasse von Magneten” = a new category. \\\hline
+\n & \der{Altermagnet}\pl{die Altermagnete} & altermagnet (a newly identified type of magnet) & آلترمگنت (نوع جدیدی از مغناطیس) &
+\key{alter(nating) + Magnet}: the tiny magnetic moments \emph{alternate} inside, so nothing leaks outside. \\\hline
+\n & \das{Bemerkenswerte} & the remarkable thing & نکتهٔ قابل‌توجه، چیز جالب &
+\key{bemerken (to notice/remark) + wert (worth)} = remark-worthy. \textsf{★} “Das Bemerkenswerte daran ist …” \\\hline
+\n & \das{Material}\pl{die Materialien} & material & ماده، متریال & \key{= \fa{متریال}}. Plural: Materialien (stress: -LI-en). \\\hline
+
+\sect{Verbs (Verben)}
+\n & \vb{funktionieren}\fm{funktioniert} & to work, to function & کار کردن، عمل کردن &
+\key{= “function”}. “Wie funktioniert das?” = How does that work? \\\hline
+\n & \vb{machen}\fm{macht, machte, gemacht} & to make, to do & ساختن، کردن، انجام دادن &
+\key{machen ≈ “make”} (+ a machine makes). “zum Magneten machen” = turn into a magnet. \\\hline
+\n & \vb{können}\fm{könnte = could (Konj. II)} & can; könnte = could, might & توانستن؛ ممکن است &
+\key{können ≈ “can”}. “Die Antwort könnte komplizierter sein” = the answer might be more complicated. \\\hline
+\n & \vb{denken}\fm{dachte, gedacht} & to think & فکر کردن &
+\key{denken ≈ “think”} (d↔th: denken/think, Ding/thing). “als lange gedacht” = than long assumed. \\\hline
+\n & \vb{denken an} + Akk. & to think of & به … فکر کردن &
+\key{an = “on”}: your thoughts land \emph{on} the fridge. “an Kühlschrankmagneten denken”. \\\hline
+\n & \vb{verändern}\fm{verändert, veränderte} & to change, transform & تغییر دادن، دگرگون کردن &
+\key{ver- + ändern (“other”-ing)}: make something \emph{other} than before. \\\hline
+\n & \vb{gehen um} \textsf{★}\fm{es geht um …} & it’s about … & موضوع دربارهٔ … است &
+\key{“it goes around (um) …”}: the talk walks around one topic. “Darum geht es heute.” \\\hline
+\n & \vb{dabei sein} \textsf{★} & to be there, to take part & حضور داشتن، همراه بودن، بودن &
+\key{da (there) + bei (with) + sein (be)} = be there with us. “Schön, dass ihr dabei seid.” \\\hline
+\n & \vb{kennen}\fm{kannte, gekannt} & to know (be familiar with) & شناختن، آشنا بودن &
+\key{“ken”} (old English “to know”), \emph{Kenner} = connoisseur. kennen = people/things; wissen = facts. \\\hline
+\n & \vb{wissen}\fm{weiß, wusste, gewusst} & to know (a fact) & دانستن &
+\key{wissen → wise, wit}. A \emph{wise} person \emph{weiß}. \\\hline
+\n & \vb{es gibt} \textsf{★}\fm{from geben = to give} & there is / there are & وجود دارد، هست &
+\key{“it gives”}: the world \emph{gives} us two poles → there are two poles. \\\hline
+\n & \vb{sich anziehen} \textsf{★} & to attract each other; (also) to get dressed & جذب کردن؛ لباس پوشیدن &
+\key{an (onto) + ziehen (pull)}: a magnet \emph{pulls} things onto itself — you \emph{pull} clothes onto your body. \\\hline
+\n & \vb{sich abstoßen} \textsf{★} & to repel each other & دفع کردن، پس زدن &
+\key{ab (away) + stoßen (push, bump)}: push away. \emph{abstoßend} = repulsive (\fa{چندش‌آور}). \\\hline
+\n & \vb{erweitern}\fm{wird erweitert (passive)} & to expand, extend & گسترش دادن، وسیع‌تر کردن &
+\key{er- + weit (wide)} = make wider. \\\hline
+\n & \vb{identifizieren} & to identify & شناسایی کردن & \key{= “identify”}; almost all -ieren verbs are international words. \\\hline
+\n & \vb{haben}\fm{hat, hatte, gehabt} & to have & داشتن & \key{haben ≈ “have”}. \\\hline
+\n & \vb{werden}\fm{wird} & to become; (passive helper) & شدن & \key{“wird erweitert” = is being expanded}. werden + Partizip = passive. \\\hline
+\n & \vb{messen} → \w{messbar} & to measure → measurable & اندازه گرفتن → قابل اندازه‌گیری &
+\key{messen + -bar (= -able)}. Farsi hook: you \emph{measure} the copper (\fa{مس}) wire. Also: essbar, machbar. \\\hline
+
+\sect{Adjectives \& adverbs (Adjektive \& Adverbien)}
+\n & \w{eigentlich} \textsf{★} & actually, really; (in questions) anyway & در واقع، اصلاً، راستی &
+\key{eigen (own) + -lich}: what it \emph{owns} inside, its true nature → actually. \\\hline
+\n & \w{kompliziert} / \w{komplizierter} & complicated / more complicated & پیچیده / پیچیده‌تر & \key{= “complicated”}; comparative +er. \\\hline
+\n & \w{lange} & (for) a long time & مدت‌ها، مدت زیادی &
+\key{lange ≈ \fa{لنگ}}: walking \fa{لنگان‌لنگان} takes a long time. \\\hline
+\n & \w{neu} & new & نو، جدید & \key{neu ≈ \fa{نو}} — same ancient root! \\\hline
+\n & \w{grundlegend} & fundamental(ly), radically & اساسی، بنیادی، از بیخ و بن &
+\key{Grund (ground) + legend (laying)} = laying the ground → \fa{بنیادی}. \\\hline
+\n & \w{schön} & nice, beautiful & قشنگ، خوب &
+\key{schön ≈ “shine”}: beautiful things shine. \textsf{★} “Schön, dass …” = (I’m) glad that … \\\hline
+\n & \w{vermutlich} & presumably, probably & احتمالاً، به گمانم &
+\key{vermuten (to suspect)}: picture a detective with a \emph{moot} (debatable) guess → probably. \\\hline
+\n & \w{die meisten} & most (people) & بیشترِ، اکثرِ & \key{meist ≈ “most”}. “die meisten von uns” = most of us. \\\hline
+\n & \w{zuerst} & first, at first & اول، اولش & \key{zu + erst (first, ≈ “earliest”)}. \\\hline
+\n & \w{irgendwie} \textsf{★} & somehow, kind of & یه جورایی، به نحوی & \key{irgend (some-) + wie (how)} = some-how. \\\hline
+\n & \w{logisch} \textsf{★} & logical; obviously & منطقی؛ معلومه، بدیهیه & \key{= “logic”}. Slang: \emph{Logo!} = obviously! \\\hline
+\n & \w{gegenseitig} & mutual(ly), each other & متقابل، همدیگر را &
+\key{gegen (against) + Seite (side)}: side \emph{against} side. \\\hline
+\n & \w{modern} & modern & مدرن & \key{= \fa{مدرن}}. \\\hline
+\n & \w{sehr} & very & خیلی & \key{sehr ≈ “sure”}: \emph{sure} good = very good. \\\hline
+\n & \w{gerade} \textsf{★} & right now; just; straight; even (number) & الان، همین حالا؛ صاف؛ زوج &
+\key{gerade ≈ \fa{گره}}: untie the knot (\fa{گره}) \emph{right now}, and the rope is \emph{straight}. \\\hline
+\n & \w{nochmal} \textsf{★} & once more, again & دوباره، یه بار دیگه & \key{noch (still) + mal (time)}; spoken form of \emph{noch einmal}. \\\hline
+\n & \w{vergangen} & past, last (years) & گذشته & \key{ver- + gangen (gone)} = gone by. “in den vergangenen Jahren”. \\\hline
+\n & \w{sogenannt} & so-called & به‌اصطلاح، موسوم به & \key{so + genannt (named)} = so-named. \\\hline
+\n & \w{bemerkenswert} & remarkable & قابل‌توجه، چشمگیر & \key{remark + worth}. \\\hline
+\n & \w{nach außen} \textsf{★} & outward(s), to the outside & به بیرون، از بیرون & \key{außen ≈ “out”} (aus = out). \\\hline
+\n & \w{kein} & no, not any & هیچ … نه، … ندارد & \key{k + ein = “not one”}. “kein Magnetfeld” = no magnetic field. \\\hline
+\n & \w{noch} & still, yet & هنوز & \key{noch ≈ “not yet / still”}; “das weiß man vielleicht noch” = you may still remember. \\\hline
+\n & \w{vielleicht} & maybe, perhaps & شاید & \key{“feel light”}: maybe I \emph{feel light} today. \\\hline
+\n & \w{auch} & also, too & هم، همچنین & \key{“ouch, me too!”} \\\hline
+\n & \w{heute} & today & امروز & \key{heute ≈ “hoy”} (Spanish “today”) → \emph{hoy-te}. \\\hline
+\n & \w{zwei} & two & دو & \key{zwei ≈ “twain”} (old English two). \\\hline
+\n & \w{alle} & all, everyone & همه & \key{= “all”}. \\\hline
+
+\sect{Little words, connectors \& spoken fillers (Partikeln, Konjunktionen)}
+\n & \w{also} \textsf{★} & so, well (false friend!) & خب، پس & \key{FALSE FRIEND}: also ≠ “also”. “also” = \fa{خب}. “auch” = also. \\\hline
+\n & \w{ja} \textsf{★} & yes; (particle) “as you know” & بله؛ (تأکید) که، دیگه & \key{“das kennen wir ja alle”} = we all know that, \fa{دیگه}. \\\hline
+\n & \w{so} \textsf{★} & so; like (filler) & این‌طوری؛ مثلاً، یه جورایی & \key{like English “like”}: “so an Kühlschrankmagneten” = like, fridge magnets. \\\hline
+\n & \w{da} & there; (filler) & آنجا؛ (پرکننده) & \key{da ≈ “there”}. “es gibt da so ein Magnetfeld” = there’s, like, this field. \\\hline
+\n & \w{nämlich} \textsf{★} & namely; you see, because & یعنی، آخه، چون & \key{nämlich ≈ “namely”}. \\\hline
+\n & \w{und zwar} \textsf{★} & and in fact; specifically & آن هم، و دقیقاً & \key{zwar ≈ \fa{سوار}}: an extra detail \emph{rides} (\fa{سوار}) on the sentence. \\\hline
+\n & \w{darum} \textsf{★} & that’s why; about that & به همین خاطر؛ درباره‌اش & \key{da + rum (around)}: around that → about that. \\\hline
+\n & \w{denn} & because; (in questions) then, anyway & چون؛ (در سؤال) حالا، مگه & \key{denn ≈ “then”} in questions: “Was ist denn das?” \\\hline
+\n & \w{aber} & but & اما، ولی & \key{“a-BUT”}. \\\hline
+\n & \w{als} & than; as; when (past) & از (مقایسه)؛ به‌عنوان؛ وقتی‌که & \key{komplizierter als gedacht} = more complicated than thought. \\\hline
+\n & \w{wie} & how; like, as & چطور؛ مثل & \key{wie = “how”}. Wie funktioniert …? \\\hline
+\n & \w{was} & what & چه، چی & \key{was ≈ “what”}. \\\hline
+\n & \w{dass} & that (conjunction) & که & \key{dass ≈ “that”}; verb goes to the end: “dass ihr dabei \emph{seid}”. \\\hline
+\n & \w{daran} & about it, in it & در آن، دربارهٔ آن & \key{da + an}. “Das Bemerkenswerte daran” = the remarkable thing about it. \\\hline
+\n & \w{zum} (= zu dem) & to the; into & به، به … تبدیل & \key{zu + dem}. “zum Magneten machen” = make into a magnet. \\\hline
+\n & \w{bei uns} & with us, at our place/show & پیش ما، در برنامهٔ ما & \key{bei ≈ “by”}: by us. \\\hline
+\n & \w{von} · \w{aus} & of, from · from, out of & از & \key{von = “from”; aus = “out”}. von uns = of us; aus dem Unterricht = from class. \\\hline
+\n & \w{an} · \w{in} & at, on, of · in & به، در · در & \key{an = “on”, in = “in”}. \\\hline
+\n & \w{und} · \w{oder} & and · or & و · یا & \key{und ≈ “and”}. \\\hline
+\n & \w{ein / eines} & a, an / of a (genitive) & یک & \key{ein ≈ “one”}. “Entstehung eines Magneten” = formation \emph{of a} magnet. \\\hline
+\n & \w{der · die · das · dieses} & the · this & این، آن & \key{see colour code}. dieses Bild = this picture. \\\hline
+\n & \w{wir · uns · unser} & we · us · our & ما · ما را · ـمان & \key{unser ≈ “our”}. unsere Computer. \\\hline
+\n & \w{ihr} & you (plural, informal) & شما (جمع، خودمانی) & \key{ihr ≈ “y’all”}. “Schön, dass ihr dabei seid.” \\\hline
+\n & \w{mein} & my & ـم، مال من & \key{mein ≈ “mine”}. \\\hline
+\n & \w{man} & one, people, you (generic) & آدم، (فاعل نامعین) & \key{man = “one/people”}. “das weiß man” = people know that. \\\hline
+\n & \w{es · sich} & it · oneself/each other & آن · خود، همدیگر & \key{sich = “self”}. \\\hline
+\end{longtable}
+
+\newpage
+\section*{Part 2 · Deep dive: tricky words \& spoken German}
+Each item gives the meaning, two everyday examples, and the closest \fa{فارسی} way of saying it,
+so you feel the word rather than just translate it.
+
+\begin{longtable}{|L{3.4cm}|L{8.6cm}|L{6.6cm}|F{6.3cm}|}
+\hline
+\rowcolor{headc}\textcolor{white}{\textbf{Word}} & \textcolor{white}{\textbf{Deutsch – examples}} &
+\textcolor{white}{\textbf{English}} & \multicolumn{1}{>{\raggedleft\arraybackslash}p{6.3cm}|}{\textcolor{white}{\fa{\textbf{فارسی – معادل و کاربرد}}}} \\\hline
+\endfirsthead
+\hline
+\rowcolor{headc}\textcolor{white}{\textbf{Word}} & \textcolor{white}{\textbf{Deutsch – examples}} &
+\textcolor{white}{\textbf{English}} & \multicolumn{1}{>{\raggedleft\arraybackslash}p{6.3cm}|}{\textcolor{white}{\fa{\textbf{فارسی – معادل و کاربرد}}}} \\\hline
+\endhead
+\hline\endfoot
+
+\w{eigentlich} &
+1) Was ist eigentlich ein Magnet?\newline
+2) Eigentlich wollte ich heute lernen, aber …\newline
+3) Wie heißt du eigentlich? &
+1) What \emph{actually} is a magnet?\newline
+2) I \emph{actually} wanted to study today, but …\newline
+3) What’s your name, \emph{by the way}? &
+۱) اصلاً آهن‌ربا چیه؟\newline
+۲) راستش می‌خواستم امروز درس بخونم، ولی …\newline
+۳) راستی، اسمت چیه؟ \\\hline
+
+\w{also} (false friend) &
+1) Also, es gibt zwei Pole.\newline
+2) Also gut, dann gehen wir. &
+1) \emph{So / well}, there are two poles.\newline
+2) \emph{Alright then}, let’s go. &
+«خب» یا «پس»؛ هرگز «همچنین» نیست.\newline
+۱) خب، دو تا قطب داریم.\newline
+۲) خب باشه، پس بریم. \\\hline
+
+\w{ja} (particle) &
+1) Das kennen wir ja alle.\newline
+2) Du bist ja schon da! &
+1) We all know that, \emph{right}.\newline
+2) Oh, you’re \emph{already} here! (surprise) &
+«دیگه» یا «که» در فارسی محاوره:\newline
+۱) اینو که همه‌مون می‌دونیم دیگه.\newline
+۲) ا، تو که اومدی! \\\hline
+
+\w{so} (filler) &
+1) Ich denke da so an Kühlschrankmagneten.\newline
+2) Der war so komisch. &
+1) I’m thinking of, \emph{like}, fridge magnets.\newline
+2) He was \emph{kind of} weird. &
+مثل «مثلاً» یا «یه جورایی»:\newline
+۱) آدم یاد مثلاً آهن‌رباهای یخچال میفته.\newline
+۲) یه جوری عجیب بود. \\\hline
+
+\w{nämlich} &
+1) Ich komme nicht, ich bin nämlich krank.\newline
+2) Es gibt ein Problem, nämlich das Geld. &
+1) I’m not coming — \emph{you see}, I’m ill.\newline
+2) There’s a problem, \emph{namely} money. &
+۱) «آخه»: نمیام، آخه مریضم.\newline
+۲) «یعنی / همانا»: یه مشکل هست، یعنی پول.\newline
+نکته: \en{nämlich} هیچ‌وقت اول جمله نمی‌آید. \\\hline
+
+\w{und zwar} &
+1) Das ändert alles, und zwar grundlegend.\newline
+2) Ich brauche Hilfe, und zwar sofort! &
+1) That changes everything — \emph{and} fundamentally \emph{at that}.\newline
+2) I need help, \emph{and I mean} right now! &
+«آن هم …»:\newline
+۱) همه‌چیز رو عوض می‌کنه، اون هم از بیخ و بن.\newline
+۲) کمک لازم دارم، اون هم همین الان! \\\hline
+
+\w{Darum geht es} &
+1) Darum geht es heute.\newline
+2) Worum geht es in dem Film? &
+1) \emph{That’s what} today \emph{is about}.\newline
+2) \emph{What is} the film \emph{about}? &
+«موضوع اینه» / «بحث سرِ اینه»:\newline
+۱) موضوع امروز اینه.\newline
+۲) فیلم درباره‌ی چیه؟ \\\hline
+
+\w{dabei sein} &
+1) Schön, dass ihr dabei seid.\newline
+2) Bist du am Samstag dabei? &
+1) Nice to \emph{have you with us}.\newline
+2) Are you \emph{in} on Saturday? &
+۱) «خوشحالیم که همراه ما هستید» (جملهٔ رایج مجری‌ها)\newline
+۲) شنبه پایه‌ای؟ / شنبه هستی؟ \\\hline
+
+\w{eines Tages} &
+1) Eines Tages lerne ich perfekt Deutsch.\newline
+2) Eines Tages stand er vor der Tür. &
+1) \emph{One day} (future) I’ll speak perfect German.\newline
+2) \emph{One day} (past) he was at the door. &
+«یه روزی» — هم برای آینده هم برای گذشته (مثل شروع قصه: «روزی روزگاری»). \\\hline
+
+\w{es gibt} &
+1) Es gibt zwei Pole.\newline
+2) Was gibt’s? / Was gibt’s Neues? &
+1) \emph{There are} two poles.\newline
+2) \emph{What’s up?} / What’s new? &
+۱) «وجود دارد / هست»: دو تا قطب هست.\newline
+۲) محاوره: «چه خبر؟» \\\hline
+
+\w{sich anziehen} &
+1) Gegensätze ziehen sich an.\newline
+2) Ich ziehe mich schnell an. &
+1) Opposites \emph{attract}.\newline
+2) I’ll \emph{get dressed} quickly. &
+۱) «قطب‌های مخالف همدیگر را جذب می‌کنند» — مثل ضرب‌المثل «کبوتر با کبوتر»، ولی برعکس!\newline
+۲) سریع لباس می‌پوشم. \\\hline
+
+\w{sich abstoßen} &
+1) Gleiche Pole stoßen sich ab.\newline
+2) Das finde ich abstoßend. &
+1) Like poles \emph{repel} each other.\newline
+2) I find that \emph{repulsive}. &
+۱) قطب‌های هم‌نام همدیگر را دفع می‌کنند.\newline
+۲) «حالمو به هم می‌زنه / چندش‌آوره». \\\hline
+
+\w{gerade} &
+1) Gerade wird dieses Bild erweitert.\newline
+2) Ich habe gerade keine Zeit.\newline
+3) Geh gerade aus! · 4 ist eine gerade Zahl. &
+1) This picture is \emph{currently} being expanded.\newline
+2) I don’t have time \emph{right now}.\newline
+3) Go \emph{straight} ahead! · 4 is an \emph{even} number. &
+۱) «همین الان / در حال حاضر»\newline
+۲) الان وقت ندارم.\newline
+۳) «مستقیم» برو!؛ ۴ عدد «زوج» است. \\\hline
+
+\w{sich ein Bild machen} &
+1) Dieses Bild wird erweitert.\newline
+2) Ich mache mir selbst ein Bild. &
+1) This \emph{view / picture} (of magnetism) is being expanded.\newline
+2) I’ll \emph{see for myself} / form my own opinion. &
+«تصور / برداشت»؛ ۲) «خودم می‌بینم و قضاوت می‌کنم». \\\hline
+
+\w{irgendwie} &
+1) Das kennen wir irgendwie aus dem Unterricht.\newline
+2) Irgendwie mag ich ihn nicht. &
+1) We \emph{somehow} know that from school.\newline
+2) I \emph{kind of} don’t like him. &
+«یه جورایی / یه‌جوری» — خیلی محاوره‌ای و پرکاربرد. \\\hline
+
+\w{logisch / logo} &
+1) …, ist logisch.\newline
+2) Kommst du mit? – Logo! &
+1) …, \emph{obviously}.\newline
+2) Are you coming? – \emph{Of course!} &
+«معلومه! / بدیهیه!» — \en{\textit{Logo}} اصطلاح عامیانه است. \\\hline
+
+\w{nochmal} &
+1) Das Bild wird nochmal erweitert.\newline
+2) Kannst du das nochmal sagen? &
+1) The picture is expanded \emph{once again}.\newline
+2) Can you say that \emph{again}? &
+«دوباره / یه بار دیگه». شکل محاوره‌ای \en{\textit{noch einmal}}. \\\hline
+
+\w{nach außen} &
+1) kein nach außen messbares Magnetfeld\newline
+2) Nach außen wirkt er ruhig. &
+1) no magnetic field measurable \emph{from the outside}\newline
+2) \emph{Outwardly}, he seems calm. &
+۱) «به بیرون / از بیرون»\newline
+۲) «ظاهراً» آرام است (ولی در درون نه). \\\hline
+\end{longtable}
+
+\vspace{6pt}
+\noindent\textbf{Grammar codes spotted in this text}
+\begin{itemize}\setlength\itemsep{1pt}
+\item \textbf{Compound nouns}: last part = gender → \emph{der Kühlschrank + der Magnet = der Kühlschrankmagnet}; \emph{die Physik + der Unterricht = der Physikunterricht}.
+\item \textbf{-schaft, -ung → die}: die Wissenschaft, die Entstehung. \textbf{-ismus → der}: der Magnetismus. \textbf{-um → das}: das Spektrum.
+\item \textbf{könnte} (Konjunktiv II) = could/might: careful, not-yet-certain claims — very common in science talk.
+\item \textbf{Passive}: \emph{wird erweitert} = werden + Partizip II (“is being expanded”).
+\item \textbf{-bar = -able}: messbar, machbar, essbar, trinkbar.
+\end{itemize}
+
+\end{document}
