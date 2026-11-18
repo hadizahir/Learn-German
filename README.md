@@ -6,6 +6,7 @@ with pronunciation (IPA + easy spelling), a memory code (Merk-Code) for every wo
 
 | Folder | Source | Files |
 |---|---|---|
-| `altermagnete/` | Spektrum-Podcast – *Altermagnete: Eine neue Form des Magnetismus* (6 Nov 2026), intro | `altermagnete_vocab.tex`, `altermagnete_vocab.pdf` |
+| `altermagnete/` | Spektrum-Podcast – *Altermagnete: Eine neue Form des Magnetismus* (6 Nov 2026), Teil 1 (intro) | `altermagnete_vocab.tex`, `altermagnete_vocab.pdf` |
+| `altermagnete/` | same episode, Teil 2 | `altermagnete_teil2_vocab.tex`, `altermagnete_teil2_vocab.pdf` |
 
-Build: `xelatex altermagnete_vocab.tex` (run twice). Needs the DejaVu fonts.
+Build: `xelatex <file>.tex` (run twice). Needs the DejaVu fonts.

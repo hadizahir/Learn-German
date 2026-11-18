@@ -1,0 +1,408 @@
+% =====================================================================
+%  Vocabulary: Spektrum-Podcast – "Altermagnete: Eine neue Form des
+%  Magnetismus" (6 Nov 2026), part 2
+%  German -> English -> Farsi, with memory codes (keyword method)
+%  Compile with:  xelatex altermagnete_vocab.tex   (run twice)
+% =====================================================================
+\documentclass[10pt]{article}
+\usepackage[a4paper,landscape,margin=1.4cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\newfontfamily\farsifont[Script=Arabic,Scale=1.0]{DejaVu Sans}
+\TeXXeTstate=1
+\usepackage{array,longtable,xcolor,colortbl}
+\usepackage{fancyhdr,enumitem,tcolorbox}
+\setlength{\headheight}{14pt}
+
+% ---------- colour code for grammatical gender ----------
+\definecolor{derc}{HTML}{1F5FBF}   % masculine  = blue
+\definecolor{diec}{HTML}{C0262D}   % feminine   = red
+\definecolor{dasc}{HTML}{1E8A3E}   % neuter     = green
+\definecolor{verbc}{HTML}{7A3FB0}  % verbs      = purple
+\definecolor{codec}{HTML}{8A5A00}  % memory code
+\definecolor{headc}{HTML}{2B2B2B}
+\definecolor{rowc}{HTML}{F4F6FA}
+\definecolor{secc}{HTML}{E3E8F2}
+
+\newcommand{\der}[1]{\textcolor{derc}{\textbf{der #1}}}
+\newcommand{\die}[1]{\textcolor{diec}{\textbf{die #1}}}
+\newcommand{\das}[1]{\textcolor{dasc}{\textbf{das #1}}}
+\newcommand{\vb}[1]{\textcolor{verbc}{\textbf{#1}}}
+\newcommand{\w}[1]{\textbf{#1}}
+\newcommand{\pl}[1]{\newline{\footnotesize\color{gray} Pl. #1}}
+\newcommand{\fm}[1]{\newline{\footnotesize\color{gray} #1}}
+\newcommand{\fa}[1]{{\farsifont\beginR #1\endR}}
+\newcommand{\en}[1]{\beginL #1\endL}
+\newcommand{\key}[1]{\textcolor{codec}{\textbf{#1}}}
+\definecolor{pronc}{HTML}{0E6B73}
+\newcommand{\pr}[2]{\newline{\footnotesize\color{pronc}\textsf{[#1]}\newline\textit{#2}}}
+\newcommand{\fatip}[1]{\par\smallskip{\raggedleft\farsifont\small\color{pronc}\beginR #1\endR\par}\smallskip}
+\newcommand{\ex}[1]{\textit{#1}}
+
+\newcolumntype{F}[1]{>{\raggedleft\arraybackslash\farsifont\beginR}p{#1}<{\endR}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\newcommand{\vocabhead}{%
+  \rowcolor{headc}
+  \textcolor{white}{\textbf{\#}} &
+  \textcolor{white}{\textbf{Deutsch}} &
+  \textcolor{white}{\textbf{English}} &
+  \multicolumn{1}{>{\raggedleft\arraybackslash}p{4.2cm}|}{\textcolor{white}{\fa{\textbf{فارسی}}}} &
+  \textcolor{white}{\textbf{Memory code (Merk-Code)}} \\}
+\newcommand{\sect}[1]{\rowcolor{secc}\multicolumn{5}{|l|}{\textbf{#1}}\\\hline}
+
+\newcounter{wn}
+\newcommand{\n}{\stepcounter{wn}\thewn}
+
+\pagestyle{fancy}\fancyhf{}
+\lhead{\small Spektrum-Podcast · Altermagnete · Teil 2}
+\rhead{\small Deutsch – English – \fa{فارسی}}
+\cfoot{\small \thepage}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Altermagnete – Teil 2: Vocabulary with Memory Codes}\\[4pt]
+{\large Spektrum-Podcast: \emph{Altermagnete: Eine neue Form des Magnetismus} (6.~Nov.~2026), part 2}\\[2pt]
+{\normalsize Deutsch · English · \fa{فارسی}}
+\end{center}
+
+\noindent Same system as Teil~1: \key{memory code} for every word,
+\textcolor{derc}{\textbf{der = blue}} · \textcolor{diec}{\textbf{die = red}} · \textcolor{dasc}{\textbf{das = green}} · \textcolor{verbc}{\textbf{verbs = purple}},
+pronunciation in \textcolor{pronc}{teal} (IPA, then easy spelling; CAPITALS = stress; \textbf{kh} = \fa{خ}, \textbf{ç} = soft “h” as in “huge”, \textbf{ü/ö} = rounded lips, \textbf{r} ≈ soft \fa{غ}).
+This sheet lists only the \textbf{new} words; words you already know from Teil~1 are in the green box at the end of Part~1,
+with any new meaning they have here. \textsf{★} = deep dive in Part~2.
+
+\vspace{6pt}
+\section*{Part 1 · New words}
+
+\begin{longtable}{|r|L{5.0cm}|L{4.0cm}|F{4.2cm}|L{9.3cm}|}
+\hline\vocabhead\hline
+\endfirsthead
+\hline\vocabhead\hline
+\endhead
+\hline\endfoot
+
+\sect{Nouns (Nomen)}
+\n & \die{Eigenschaft}\pr{ˈaɪ̯ɡn̩ʃaft}{EYE-gen-shaft}\pl{die Eigenschaften} & property, characteristic, feature & ویژگی، خاصیت &
+\key{eigen (own) + -schaft}: what a thing \emph{owns} = its property. Same root as \emph{eigentlich} (Teil 1). -schaft → always \textbf{die}. \\\hline
+\n & \die{Hoffnung}\pr{ˈhɔfnʊŋ}{HOF-noong}\pl{die Hoffnungen} & hope & امید &
+\key{hoffen ≈ “hope”}: you sigh “hooof…” while hoping. -ung → \textbf{die}. \\\hline
+\n & \der{Speicher}\pr{ˈʃpaɪ̯çɐ}{SHPYE-çer}\pl{die Speicher} & memory, storage (computer); storehouse & حافظه، فضای ذخیره‌سازی؛ انبار &
+\key{a SPY (SHPYE) who stores secrets}. \emph{speichern} = to save (the “Speichern” button = Save). \\\hline
+\n & \die{Zukunftsmusik} \textsf{★}\pr{ˈtsuːkʊnftsmuˌziːk}{TSOO-koonfts-moo-zeek} & (idiom) a dream of the future, not reality yet & فعلاً در حد رؤیاست، حالا حالاها مانده &
+\key{Zukunft (future) + Musik}: music that will only play \emph{in the future} — you can’t hear it yet. \emph{Zukunft} = zu + kommen: what is “coming to” us. \\\hline
+\n & \die{Temperatur}\pr{tɛmpəʁaˈtuːɐ̯}{tem-peh-ra-TOOR}\pl{die Temperaturen} & temperature & دما، درجهٔ حرارت &
+\key{= temperature}; stress at the end. Words in \textbf{-ur} are \textbf{die} (die Natur, die Kultur). \\\hline
+\n & \das{Beispiel} · \w{zum Beispiel} \textsf{★}\pr{ˈbaɪ̯ʃpiːl · tsʊm ˈbaɪ̯ʃpiːl}{BYE-shpeel · tsoom BYE-shpeel}\pl{die Beispiele} & example · for example (z.\,B.) & مثال · برای مثال، مثلاً &
+\key{bei (beside) + Spiel (game)}: a little game played \emph{beside} the rule to show it. Written short: \textbf{z.\,B.} \\\hline
+\n & \die{Entdeckung}\pr{ɛntˈdɛkʊŋ}{ent-DEK-oong}\pl{die Entdeckungen} & discovery & کشف &
+\key{ent- (remove) + Decke (blanket, cover)}: pull the blanket off = \emph{dis-cover}! Exactly like English. \\\hline
+\n & \das{Verständnis}\pr{fɛɐ̯ˈʃtɛntnɪs}{fer-SHTENT-niss} & understanding, comprehension & درک، فهم &
+\key{verstehen (to understand) + -nis}: \emph{ver-stehen} ≈ “under-stand”. Most -nis nouns are \textbf{das}. \\\hline
+
+\sect{Verbs (Verben)}
+\n & \vb{zeigen}\pr{ˈtsaɪ̯ɡn̩}{TSYE-gen}\fm{zeigt, zeigte, gezeigt} & to show & نشان دادن &
+\key{der Zeiger = the hand of a clock}: it \emph{shows} the time. \emph{Zeigefinger} = index finger (the showing finger). \\\hline
+\n & \vb{klingen} \textsf{★}\pr{ˈklɪŋən}{KLING-en}\fm{klingt, klang, geklungen} & to sound & به نظر رسیدن؛ صدا دادن &
+\key{“kling-klang”} = sound of a bell, like \fa{جرینگ}. \emph{Das klingt gut} = sounds good. \\\hline
+\n & \vb{stecken} \textsf{★}\pr{ˈʃtɛkn̩}{SHTEK-en}\fm{steckt, steckte, gesteckt} & to put/stick (in); to be (stuck) in & فرو کردن، گذاشتن؛ گیر بودن &
+\key{stecken ≈ “stick”}. \emph{der Stecker} = plug. \emph{dahinter stecken} = to be behind something. \\\hline
+\n & \vb{ermöglichen}\pr{ɛɐ̯ˈmøːklɪçn̩}{er-MÖÖK-li-çen}\fm{ermöglicht} & to make possible, enable & ممکن کردن، امکان‌پذیر ساختن &
+\key{er- + möglich (possible) + -en} = make possible. \emph{möglich} ≈ “may-lich” (what \emph{may} happen). \\\hline
+\n & \vb{untersuchen}\pr{ʊntɐˈzuːxn̩}{oon-ter-ZOO-khen}\fm{untersucht, untersuchte, untersucht} & to examine, investigate, study & بررسی کردن، آزمایش کردن، معاینه کردن &
+\key{unter (under) + suchen (to search)}: search \emph{underneath}. Not separable (stress on -SU-), so no \emph{ge-}: \emph{untersucht}. \\\hline
+\n & \vb{herstellen}\pr{ˈheːɐ̯ʃtɛlən}{HAIR-shtel-en}\fm{stellt her, stellte her, hergestellt} & to produce, manufacture, make & تولید کردن، ساختن &
+\key{her (here) + stellen (put)}: put it \emph{here} = produce. \emph{der Hersteller} = the manufacturer. \\\hline
+\n & \vb{wollen}\pr{ˈvɔlən}{VOL-en}\fm{will, wollte, gewollt} & to want & خواستن &
+\key{ich will = my will}: “I want”. Careful: \emph{ich will} is \textbf{not} “I will” (= \emph{ich werde}). \\\hline
+\n & \vb{sprechen über} + Akk.\pr{ˈʃpʁɛçn̩ ˈʔyːbɐ}{SHPREÇ-en Ü-ber}\fm{spricht, sprach, gesprochen} & to talk/speak about & صحبت کردن دربارهٔ &
+\key{sprechen ≈ “speech”}; \emph{über ≈ “over”}: talk \emph{over} a topic. \\\hline
+
+\sect{Adjectives \& adverbs (Adjektive \& Adverbien)}
+\n & \w{gleichzeitig}\pr{ˈɡlaɪ̯çˌtsaɪ̯tɪç}{GLYEÇ-tsye-tiç} & at the same time, simultaneously & هم‌زمان، در عین حال &
+\key{gleich (same) + Zeit (time ≈ “tide”) + -ig}. Exactly like Farsi \fa{هم + زمان}! \\\hline
+\n & \w{bisher}\pr{bɪsˈheːɐ̯}{biss-HAIR} & until now, so far & تاکنون، تا حالا &
+\key{bis (until) + her (here)}: until \emph{here} (= now). \\\hline
+\n & \w{vor allem}\pr{foːɐ̯ ˈʔaləm}{for AL-em} & above all, especially, mainly & به‌ویژه، مخصوصاً، بیش از همه &
+\key{vor (before) + allem (all)}: before everything else. \\\hline
+\n & \w{jetzt}\pr{jɛtst}{yetst} & now & الان، حالا & \key{“jet”}: now, as fast as a jet. \\\hline
+\n & \w{alles}\pr{ˈaləs}{AL-less} & everything, all & همه‌چیز & \key{all + es (it)} = all of it. \\\hline
+\n & \w{erstmal} \textsf{★}\pr{ˈeːɐ̯stmaːl}{AIRST-mahl} & first (of all); for now (spoken) & فعلاً، اولش، عجالتاً &
+\key{erst (first) + mal (time)}: the first time you look at it. Spoken form of \emph{erst einmal}. \\\hline
+\n & \w{relativ}\pr{ʁelaˈtiːf}{re-la-TEEF} & relatively, fairly & نسبتاً & \key{= relative}; final \textbf{v} sounds like \textbf{f}. \\\hline
+\n & \w{rätselhaft}\pr{ˈʁɛːtsl̩haft}{RAIT-sel-haft} & puzzling, mysterious & معمایی، مرموز، اسرارآمیز &
+\key{das Rätsel (riddle) + -haft (-like)}: a RAT solving a riddle. \emph{Kreuzworträtsel} = crossword. \\\hline
+\n & \w{deshalb}\pr{ˈdɛshalp}{DESS-halp} & therefore, that’s why & به همین دلیل، برای همین &
+\key{des + halb (“on behalf of”)}: on behalf \emph{of that}. Sends the verb right after it: \emph{deshalb \textbf{ist} es …} \\\hline
+\n & \w{spannend}\pr{ˈʃpanənt}{SHPAN-ent} & exciting, gripping & هیجان‌انگیز، جذاب &
+\key{spannen = to stretch tight} (like a bow): excitement = tension. \emph{die Spannung} = suspense, also voltage! \\\hline
+\n & \w{praktisch} \textsf{★}\pr{ˈpʁaktɪʃ}{PRAK-tish} & practical; (spoken) practically, basically & کاربردی، عملی؛ (محاوره) عملاً &
+\key{= practical}. Spoken: \emph{Das ist praktisch fertig} = it’s basically done. \\\hline
+\n & \w{schnell → schneller}\pr{ʃnɛl → ˈʃnɛlɐ}{shnel → SHNEL-er} & fast → faster & سریع → سریع‌تر &
+\key{a SNAIL (shnel) that is surprisingly fast}. \\\hline
+\n & \w{dicht → dichter}\pr{dɪçt → ˈdɪçtɐ}{diçt → DIÇ-ter} & dense, tight → denser & فشرده، متراکم → فشرده‌تر &
+\key{dicht ≈ “thick”} (d↔th as in Ding/thing). Careful: \emph{der Dichter} = the poet! \\\hline
+\n & \w{energieeffizient}\pr{enɛʁˈɡiːʔɛfiˌtsi̯ɛnt}{e-ner-GEE-ef-fi-tsyent} & energy-efficient & کم‌مصرف، با بازده انرژی بالا &
+\key{Energie + effizient}: two international words glued together. \emph{Energie} = \fa{انرژی}. \\\hline
+\n & \w{manche}\pr{ˈmançə}{MAN-çeh} & some, several (not all) & برخی، بعضی &
+\key{“many-ish”}: quite a few, but not all. \emph{manche der Materialien} = some of the materials. \\\hline
+\n & \w{nur}\pr{nuːɐ̯}{noor} & only, just & فقط &
+\key{nur ≈ \fa{نور}}: \emph{only} light, nothing else. \\\hline
+\n & \w{extrem}\pr{ɛksˈtʁeːm}{eks-TRAYM} & extremely & بسیار، به‌شدت & \key{= extreme}. \\\hline
+\n & \w{niedrig}\pr{ˈniːdʁɪç}{NEE-driç} & low & پایین، کم &
+\key{“KNEE-drig”}: as low as your knee. Opposite: \emph{hoch} (high). \\\hline
+\n & \w{schwierig}\pr{ˈʃviːʁɪç}{SHVEE-riç} & difficult & سخت، دشوار &
+\key{schwer (heavy, hard) + -ig}: heavy work = difficult. \\\hline
+\n & \w{trotzdem} \textsf{★}\pr{ˈtʁɔtsdeːm}{TROTS-daym} & nevertheless, anyway, still & با این حال، با وجود این، باز هم &
+\key{trotz (despite) + dem (that)}: the horse \emph{trots} on despite that. \\\hline
+
+\sect{Little words (Partikeln, Präpositionen, Pronomen)}
+\n & \w{dahinter} \textsf{★}\pr{daˈhɪntɐ}{da-HIN-ter} & behind it & پشتِ آن &
+\key{da + hinter (behind, ≈ “hinder”)}: the thing that \emph{hinders} your view is in front, the secret is \emph{behind}. \\\hline
+\n & \w{darüber}\pr{daˈʁyːbɐ}{da-RÜ-ber} & about it; over it & دربارهٔ آن؛ بالای آن &
+\key{da + (r) + über}: \emph{über etwas sprechen} → \emph{darüber sprechen} (talk about it). \\\hline
+\n & \w{für}\pr{fyːɐ̯}{füür} & for & برای & \key{für ≈ “for”}. Takes Akkusativ: \emph{für die Wissenschaft}. \\\hline
+\n & \w{mit}\pr{mɪt}{mit} & with & با & \key{a “mitt” (glove) goes \emph{with} your hand}. Takes Dativ: \emph{mit Manon}. \\\hline
+\n & \w{sie}\pr{ziː}{zee} & they (here); she & آن‌ها؛ او (مؤنث) & \key{sie + plural verb = they}: \emph{sie können}; \emph{sie kann} = she can. \\\hline
+\n & \w{Hallo!}\pr{haˈloː}{ha-LOH} & Hello! & سلام! & \key{= hello}. Podcast style: \emph{Hallo Manon} — first names are normal on air. \\\hline
+\end{longtable}
+
+\begin{tcolorbox}[colback=dasc!8,colframe=dasc,boxrule=0.6pt,arc=1mm,title={\textbf{Already in Teil 1 — and what is new about them here}}]
+\small
+\textbf{kennen → kannte} [ˈkantə] \emph{KAN-teh}: past tense (Präteritum) = “knew”. \emph{die man bisher von Magneten kannte} = that people knew so far from magnets. \fa{می‌شناخت}\\
+\textbf{können → könnten} [ˈkœntn̩] \emph{KÖN-ten}: plural of \emph{könnte}: \emph{Altermagnete könnten …} = altermagnets could …\\
+\textbf{aber} in the middle: \emph{können sie \underline{aber} …} = \emph{however} (\fa{اما / با این حال}), not at the start.\\
+\textbf{So, …} at the start = “OK, so …” (a speaker’s reset, \fa{خب،}). \textbf{gerade deshalb} = \emph{precisely} for that reason (\fa{دقیقاً به همین خاطر}).\\
+\textbf{noch} at the start: \emph{Noch ist das Zukunftsmusik} = \emph{for now / as yet} it’s a dream (\fa{هنوز / فعلاً}).\\
+\textbf{bei} + temperature: \emph{bei niedrigen Temperaturen} = \emph{at} low temperatures (\fa{در دمای پایین}).\\
+\textbf{also} = “so, therefore” (\fa{پس}), \textbf{denn} = “because”, \textbf{eines Tages}, \textbf{und zwar}, \textbf{die Wissenschaft}, \textbf{funktionieren}, \textbf{verändern}, \textbf{grundlegend}, \textbf{sehr}, \textbf{oder}, \textbf{man}, \textbf{unser}: see Teil~1.
+\end{tcolorbox}
+
+\newpage
+\section*{Part 2 · Deep dive: tricky words \& spoken German}
+
+\begin{longtable}{|L{3.4cm}|L{8.6cm}|L{6.6cm}|F{6.3cm}|}
+\hline
+\rowcolor{headc}\textcolor{white}{\textbf{Word}} & \textcolor{white}{\textbf{Deutsch – examples}} &
+\textcolor{white}{\textbf{English}} & \multicolumn{1}{>{\raggedleft\arraybackslash}p{6.3cm}|}{\textcolor{white}{\fa{\textbf{فارسی – معادل و کاربرد}}}} \\\hline
+\endfirsthead
+\hline
+\rowcolor{headc}\textcolor{white}{\textbf{Word}} & \textcolor{white}{\textbf{Deutsch – examples}} &
+\textcolor{white}{\textbf{English}} & \multicolumn{1}{>{\raggedleft\arraybackslash}p{6.3cm}|}{\textcolor{white}{\fa{\textbf{فارسی – معادل و کاربرد}}}} \\\hline
+\endhead
+\hline\endfoot
+
+\w{klingen} &
+1) Das klingt rätselhaft.\newline
+2) Das klingt gut! / Klingt komisch. &
+1) That \emph{sounds} mysterious.\newline
+2) \emph{Sounds} good! / Sounds weird. &
+«به نظر می‌رسد»:\newline
+۱) معمایی به نظر می‌رسد.\newline
+۲) خوبه! / عجیب به نظر میاد. \\\hline
+
+\w{erstmal} &
+1) Das klingt erstmal rätselhaft.\newline
+2) Ich trinke erstmal einen Kaffee. &
+1) At first, that sounds mysterious.\newline
+2) \emph{First} I’ll have a coffee. &
+۱) «اولش / در نگاه اول» معمایی به نظر می‌رسد.\newline
+۲) «فعلاً / اول» یه قهوه می‌خورم. \\\hline
+
+\w{gerade deshalb} &
+1) Gerade deshalb ist es so spannend.\newline
+2) Es ist schwer – gerade deshalb lerne ich es. &
+1) \emph{Precisely because of that} it’s so exciting.\newline
+2) It’s hard – \emph{that’s exactly why} I’m learning it. &
+«دقیقاً به همین خاطر»:\newline
+۲) سخته — دقیقاً برای همین یادش می‌گیرم. \\\hline
+
+\w{dahinter stecken} &
+1) Dahinter steckt eine praktische Hoffnung.\newline
+2) Wer steckt dahinter? &
+1) \emph{Behind it} lies a practical hope.\newline
+2) \emph{Who’s behind} this? &
+«پشتش … است / پشت پرده»:\newline
+۱) پشتش یک امید کاربردی است.\newline
+۲) کی پشت این ماجراست؟ \\\hline
+
+\w{Zukunftsmusik} &
+1) Noch ist das Zukunftsmusik.\newline
+2) Ein eigenes Haus? Das ist Zukunftsmusik. &
+1) For now, that’s \emph{a dream of the future}.\newline
+2) My own house? That’s \emph{pie in the sky} for now. &
+«فعلاً در حد رؤیاست / حالا حالاها مونده»:\newline
+۲) خونهٔ شخصی؟ حالا حالاها مونده! \\\hline
+
+\w{praktisch} &
+1) eine sehr praktische Hoffnung\newline
+2) Ich bin praktisch fertig. &
+1) a very \emph{practical} hope\newline
+2) I’m \emph{basically} done. &
+۱) «کاربردی، عملی»\newline
+۲) محاوره: «تقریباً / عملاً» تموم کردم. \\\hline
+
+\w{zum Beispiel} &
+1) …, funktionieren nur bei niedrigen Temperaturen zum Beispiel.\newline
+2) Ich mag Obst, zum Beispiel Äpfel. &
+1) …, only work at low temperatures, \emph{for example}.\newline
+2) I like fruit, \emph{for example} apples. &
+«برای مثال / مثلاً». در گفتار گاهی آخر جمله می‌آید، مثل «مثلاً» در فارسی. \\\hline
+
+\w{trotzdem} &
+1) Aber trotzdem könnte die Entdeckung …\newline
+2) Es regnet, trotzdem gehe ich raus. &
+1) But \emph{nevertheless} the discovery could …\newline
+2) It’s raining; I’m going out \emph{anyway}. &
+«با این حال / باز هم»:\newline
+۲) بارون میاد، با این حال میرم بیرون. \\\hline
+
+\w{vor allem} &
+1) die man vor allem von Magneten kannte\newline
+2) Ich lerne vor allem abends. &
+1) that one knew \emph{mainly} from magnets\newline
+2) I study \emph{mostly} in the evening. &
+«بیشتر / مخصوصاً / به‌ویژه». \\\hline
+
+\w{spannend} &
+1) Das ist für die Wissenschaft so spannend.\newline
+2) Der Film war total spannend! &
+1) That’s so \emph{exciting} for science.\newline
+2) The film was really \emph{gripping}! &
+«هیجان‌انگیز / جذاب». برای فیلم و کتاب هم خیلی رایج است. \\\hline
+
+\w{Hallo + Name} &
+1) Hallo Manon.\newline
+2) Hallo zusammen! &
+1) Hi Manon.\newline
+2) Hi everyone! &
+«سلام …» — در پادکست‌های آلمانی مهمان را با اسم کوچک صدا می‌زنند. \\\hline
+\end{longtable}
+
+\newpage
+\section*{Part 3 · New grammar in this part — from simple to complex}
+These build on the 10 levels in Teil~1. Each one comes straight from this part of the podcast.
+
+\tcbset{colback=rowc,colframe=headc,boxrule=0.5pt,arc=1mm,left=4pt,right=4pt,top=3pt,bottom=3pt}
+
+\subsection*{Step 1 · Comparatives: schnell → schneller}
+Add \textbf{-er} to compare (like English \emph{fast → faster}): \ex{schnell → schnell\textbf{er}, dicht → dicht\textbf{er}}.
+Long words don’t use “more”: \ex{energieeffizient → energieeffizient\textbf{er}} (English: \emph{more} energy-efficient).
+Before a noun, the comparative \emph{also} gets an adjective ending (Teil~1, Level 6):
+\begin{tcolorbox}
+\ex{schnell\textbf{er}\underline{e}, dicht\textbf{er}\underline{e} und energieeffizient\textbf{er}\underline{e} Speicher} = faster, denser and more energy-efficient storage\\
+\textbf{-er} = comparative, \underline{-e} = ending (plural, no article).
+\end{tcolorbox}
+\fatip{نکته: \en{-er} آلمانی مثل «-تر» فارسی است: سریع‌تر = \en{schneller}. فقط در آلمانی قبل از اسم یک پسوند دیگر هم می‌گیرد.}
+
+\subsection*{Step 2 · Adverb first → verb second, subject third (inversion)}
+The V2 rule from Teil~1, Level 3 — this part is full of it:
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\rowcolor{secc}\textbf{Position 1} & \textbf{2 = verb} & \textbf{3 = subject} & \textbf{rest}\\\hline
+Gleichzeitig & können & sie & aber Eigenschaften zeigen …\\
+Gerade deshalb & ist & es & für die Wissenschaft so spannend.\\
+Dahinter & steckt & eine Hoffnung. & \\
+Noch & ist & das & Zukunftsmusik.\\
+Trotzdem & könnte & die Entdeckung & unser Verständnis … verändern.\\
+Also & wollen & wir & darüber sprechen.\\\hline
+\end{tabular}
+\end{center}
+Careful: \textbf{also} and \textbf{deshalb, trotzdem} take position 1 (verb follows right away),
+but \textbf{aber, und, denn, oder} stand \emph{outside} the count (position 0): \ex{\textbf{Aber} trotzdem \textbf{könnte} …}
+
+\subsection*{Step 3 · Präteritum of “mixed” verbs: kennen → kannte}
+Written German and stories use the simple past (Präteritum). A few verbs change their vowel \emph{and} take \textbf{-te}:
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\rowcolor{secc}\textbf{Infinitive} & \textbf{Präteritum (er/sie/man)} & \textbf{Partizip II} & \textbf{English}\\\hline
+kennen & k\textbf{a}nn\textbf{te} & gek\textbf{a}nnt & knew\\
+denken & d\textbf{ach}te & ged\textbf{ach}t & thought\\
+wissen & w\textbf{u}ss\textbf{te} & gew\textbf{u}sst & knew (a fact)\\
+bringen & br\textbf{ach}te & gebr\textbf{ach}t & brought\\\hline
+\end{tabular}
+\end{center}
+From the text: \ex{die man bisher vor allem von Magneten \textbf{kannte}}. In speech people mostly use the Perfekt (\ex{hat gekannt}), except with \emph{sein, haben} and modal verbs (\emph{war, hatte, konnte, wollte}).
+
+\subsection*{Step 4 · Modal verbs: könnten, wollen}
+Modal verb in position 2, the main verb as an \textbf{infinitive at the end} (the verb bracket):
+\begin{itemize}[nosep]
+\item \ex{Altermagnete \textbf{könnten} eines Tages schnellere … Speicher \textbf{ermöglichen}.} (could make possible — Konjunktiv II, plural)
+\item \ex{Also \textbf{wollen} wir darüber \textbf{sprechen}.} (so we want to talk about it — present tense)
+\end{itemize}
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline\rowcolor{secc} & \textbf{können (Präsens)} & \textbf{könnte (Konj. II)} & \textbf{wollen}\\\hline
+ich / er, sie, es & kann & könnte & will\\
+wir / sie, Sie & können & könn\textbf{ten} & wollen\\\hline
+\end{tabular}
+\end{center}
+\fatip{نکته: \en{ich will} یعنی «می‌خواهم»، نه «خواهم کرد». برای آینده از \en{ich werde} استفاده می‌شود.}
+
+\subsection*{Step 5 · da-compounds: dahinter, darüber}
+For \emph{things} and \emph{ideas}, German doesn’t say “behind it / about it” with a pronoun. It uses \textbf{da(r) + preposition}:
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline\rowcolor{secc}\textbf{Verb + preposition} & \textbf{da-compound} & \textbf{From the text}\\\hline
+hinter etwas stecken & \textbf{da}hinter & \ex{\textbf{Dahinter} steckt eine Hoffnung.}\\
+über etwas sprechen & \textbf{dar}über & \ex{Also wollen wir \textbf{darüber} sprechen.}\\
+an etwas (Teil 1) & \textbf{dar}an & \ex{Das Bemerkenswerte \textbf{daran} …}\\\hline
+\end{tabular}
+\end{center}
+Rule: before a vowel add \textbf{r}: da\textbf{r}über, da\textbf{r}an, da\textbf{r}um. For \emph{people} use preposition + pronoun: \ex{mit \textbf{ihr} sprechen} (with her), not \emph{damit}.
+
+\subsection*{Step 6 · Relative clause where the relative pronoun is the object}
+\begin{tcolorbox}
+\ex{Eigenschaften, \textbf{die} \underline{man} bisher vor allem von Magneten \textbf{kannte}}\\
+= properties \emph{that} people previously knew mainly from magnets
+\end{tcolorbox}
+\textbf{die} refers to \emph{Eigenschaften} and is the \emph{object} (Akkusativ plural); the subject is \textbf{man}. The verb (\emph{kannte}) goes to the end.
+In Teil~1, \ex{Dinge, \textbf{die} sich anziehen}, \emph{die} was the subject. Find the subject to know who does what!
+\fatip{نکته: مثل «ویژگی‌هایی که تا حالا بیشتر از آهن‌رباها می‌شناختیم». فعل جملهٔ وابسته در آلمانی هم مثل فارسی آخر می‌آید.}
+
+\subsection*{Step 7 · zu + infinitive after an adjective: schwierig herzustellen}
+\textbf{Adjective + zu + infinitive} = “hard/easy/possible to do”:
+\ex{Das ist schwierig \textbf{zu} verstehen.} · \ex{Das ist leicht \textbf{zu} lernen.}
+With a \textbf{separable} verb, \emph{zu} goes \emph{in the middle} and everything is one word:
+\begin{tcolorbox}
+her\textbf{stellen} → her\textbf{zu}stellen: \ex{Die Materialien sind sehr schwierig \textbf{herzustellen}.} (very hard to produce)\\
+an\textbf{ziehen} → an\textbf{zu}ziehen · ab\textbf{stoßen} → ab\textbf{zu}stoßen
+\end{tcolorbox}
+\fatip{نکته: مثل «ساختنش سخت است». در فعل‌های جداشدنی \en{zu} وسط فعل می‌نشیند: \en{her-zu-stellen}.}
+
+\subsection*{Step 8 · Participles as adjectives + genitive plural}
+\begin{tcolorbox}
+\ex{manche \textbf{der} untersucht\underline{en} Materialien} = some \emph{of the} investigated materials
+\end{tcolorbox}
+\begin{itemize}[nosep]
+\item \textbf{untersucht} is the Partizip II of \emph{untersuchen}; used before a noun it gets an adjective ending: \emph{die untersucht\underline{en} Materialien} (the studied materials). Like English “the \emph{investigated} materials”.
+\item \textbf{manche der …} / \textbf{viele der …} / \textbf{einige der …}: \emph{der} here is \textbf{Genitiv plural} = “of the”.
+\end{itemize}
+
+\subsection*{Step 9 · Dative plural without article: bei extrem niedrigen Temperaturen}
+\textbf{bei} always takes the Dativ. In the Dativ plural, the adjective ends in \textbf{-en} and the noun adds \textbf{-n} if it can:
+\begin{tcolorbox}
+\ex{\textbf{bei} extrem niedrig\underline{en} Temperatur\underline{en}} = at extremely low temperatures\\
+\emph{extrem} describes the adjective, not the noun → it is an adverb and gets \textbf{no} ending.
+\end{tcolorbox}
+Compare: \ex{bei extrem niedrig\textbf{er} Temperatur} (singular, die → Dativ \emph{-er}).
+
+\subsection*{Step 10 · Building long words: the linking -s-}
+German glues words together; sometimes a linking \textbf{-s-} (Fugen-s) appears, especially after \emph{-ung, -heit, -keit, -schaft, -ion} and some other words:
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline\rowcolor{secc}\textbf{Parts} & \textbf{Compound} & \textbf{Meaning}\\\hline
+die Zukunft + die Musik & die Zukunft\textbf{s}musik & music of the future → a far-off dream\\
+die Wissenschaft + der Podcast & der Wissenschaft\textbf{s}podcast & science podcast\\
+die Entdeckung + die Geschichte & die Entdeckung\textbf{s}geschichte & story of a discovery\\
+die Energie + effizient & energieeffizient & energy-efficient (no -s-)\\\hline
+\end{tabular}
+\end{center}
+Reading tip: split a long word from the \emph{end}: the last part is the main word and decides the gender (\emph{die Musik → die Zukunftsmusik}).
+\fatip{نکته: کلمات مرکب آلمانی را از آخر بخوانید؛ بخش آخر معنی اصلی و جنسیت را تعیین می‌کند.}
+
+\end{document}
